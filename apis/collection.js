@@ -10,6 +10,7 @@
        const books = await getbook();
        res.send(books)
    })
+   
    router.get('/:id', async(req,res)=>{
        const {id} = req.params
        const books = await getbookById(id)

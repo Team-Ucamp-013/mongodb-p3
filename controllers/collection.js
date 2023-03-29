@@ -8,9 +8,10 @@ return book
  // Obtener un libro 
  const getbookById = async(_id) => {
    
-     const newBook = new bookModel(body)
-     await newBook.save()
-     return newBook
+    //  const newBook = new bookModel(body)
+    //  await newBook.save()
+    //  return newBook
+    return await bookModel.findOne({ _id })
  }
  //Crear 
  const createBook = async(body) =>{
